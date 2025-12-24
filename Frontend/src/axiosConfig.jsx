@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const instance = axios.create({
-  // baseURL: "http://localhost:8080/api/jobs",
-  baseURL:"http://localhost:8080",
+  // baseURL: "https://jobportal-jsnh.onrender.com/api/jobs",
+  baseURL:"https://jobportal-jsnh.onrender.com",
 });
 
 instance.interceptors.request.use((config) => {

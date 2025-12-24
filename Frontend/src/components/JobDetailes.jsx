@@ -12,7 +12,7 @@ function JobDetailes() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/api/jobs/${id}`)
+      .get(`https://jobportal-jsnh.onrender.com/api/jobs/${id}`)
       .then((res) => setJob(res.data))
       .catch((err) => console.error("Error loading job details:", err));
   }, [id]);

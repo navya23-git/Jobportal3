@@ -22,7 +22,7 @@ function StudentPage() {
       }
 
       try {
-        const res = await axios.get("http://localhost:8080/api/jobs/active", {
+        const res = await axios.get("https://jobportal-jsnh.onrender.com/api/jobs/active", {
           headers: { Authorization: `Bearer ${token}` },
         });
 

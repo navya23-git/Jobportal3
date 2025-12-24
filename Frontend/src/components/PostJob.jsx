@@ -37,7 +37,7 @@ const PostJob = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:8080/api/jobs/post", {
+      const response = await fetch("https://jobportal-jsnh.onrender.com/api/jobs/post", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

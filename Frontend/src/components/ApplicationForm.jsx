@@ -29,7 +29,7 @@ function ApplicationForm() {
     console.log(token);
 
     try {
-      const res = await axios.post("http://localhost:8080/api/applications/apply", formData, {
+      const res = await axios.post("https://jobportal-jsnh.onrender.com/api/applications/apply", formData, {
         headers: {
           Authorization: "Bearer " + token,
           "Content-Type": "multipart/form-data",

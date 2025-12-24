@@ -35,7 +35,7 @@ function RecruiterPage({ user }) {
       setLoadingJobId(jobId);
 
       const res = await axios.get(
-        `http://localhost:8080/api/recruiter/jobs/${jobId}/passed`,
+        `https://jobportal-jsnh.onrender.com/api/recruiter/jobs/${jobId}/passed`,
         {
           headers: { Authorization: "Bearer " + token },
         }
