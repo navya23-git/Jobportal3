@@ -1,0 +1,110 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 64px;
+  background-color: #1e293b; /* dark blue */
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Nav links (desktop) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Links */
+.nav-links li a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #38bdf8;
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: #ef4444;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background-color: #1e293b;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logout-btn {
+    width: 80%;
+  }
+}
+
+/* Optional animation for hamburger (if you want later) */
+.bar.change {
+  background-color: #38bdf8;
+}
+

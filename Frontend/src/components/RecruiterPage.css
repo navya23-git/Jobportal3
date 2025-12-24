@@ -1,0 +1,40 @@
+.recruiter-page-container,
+.page-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.job-form input,
+.job-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.job-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.job-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #667eea;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.job-form button:hover {
+  background-color: #5a67d8;
+}

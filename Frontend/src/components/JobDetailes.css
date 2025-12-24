@@ -1,0 +1,26 @@
+.job-details {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.apply-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
+
+.success-msg {
+  color: green;
+  margin-top: 15px;
+}
