@@ -14,7 +14,7 @@ public class WebConfig {
             @Override 
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                       .allowedOrigins("https://jobportal-project-e9ra.vercel.app/","http://localhost:5173")
+                       .allowedOrigins("https://job-finder-inky-theta.vercel.app","http://localhost:5173")
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*");
             }
